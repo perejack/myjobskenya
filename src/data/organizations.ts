@@ -1,0 +1,133 @@
+export interface Organization {
+  id: string;
+  name: string;
+  shortName: string;
+  mission: string;
+  liveRoles: number;
+  category: string;
+  color: string;
+  image: string;
+}
+
+export const organizations: Organization[] = [
+  {
+    id: "un-kenya",
+    name: "United Nations (UN) Kenya",
+    shortName: "UN Kenya",
+    mission: "Operates UNEP, UNICEF, and UNHCR agencies promoting peace, development, and human rights across Kenya.",
+    liveRoles: 26,
+    category: "International",
+    color: "#009EDB",
+    image: "/images/org-un-kenya.jpg",
+  },
+  {
+    id: "world-vision",
+    name: "World Vision Kenya",
+    shortName: "World Vision",
+    mission: "Focuses on child protection, education, and humanitarian aid for vulnerable communities.",
+    liveRoles: 26,
+    category: "International",
+    color: "#FF6B00",
+    image: "/images/org-world-vision.jpg",
+  },
+  {
+    id: "amref",
+    name: "Amref Health Africa",
+    shortName: "Amref",
+    mission: "Leading health-focused NGO headquartered in Nairobi, specializing in medical research and public health.",
+    liveRoles: 26,
+    category: "Health",
+    color: "#E31937",
+    image: "/images/org-amref.jpg",
+  },
+  {
+    id: "save-children",
+    name: "Save the Children",
+    shortName: "Save the Children",
+    mission: "Dedicated to children's rights, welfare, and education across Kenya.",
+    liveRoles: 26,
+    category: "International",
+    color: "#E11D2A",
+    image: "/images/org-save-children.jpg",
+  },
+  {
+    id: "irc",
+    name: "International Rescue Committee",
+    shortName: "IRC",
+    mission: "Provides relief and rehabilitation, particularly for refugees and displaced populations.",
+    liveRoles: 26,
+    category: "Humanitarian",
+    color: "#FFD100",
+    image: "/images/org-irc.jpg",
+  },
+  {
+    id: "mercy-corps",
+    name: "Mercy Corps",
+    shortName: "Mercy Corps",
+    mission: "Focuses on climate change, economic development, and youth empowerment in East Africa.",
+    liveRoles: 26,
+    category: "Development",
+    color: "#E4002B",
+    image: "/images/org-mercy-corps.jpg",
+  },
+  {
+    id: "oxfam",
+    name: "Oxfam International",
+    shortName: "Oxfam",
+    mission: "Works to tackle poverty, inequality, and injustice across communities.",
+    liveRoles: 26,
+    category: "International",
+    color: "#61A534",
+    image: "/images/org-oxfam.jpg",
+  },
+  {
+    id: "kenya-red-cross",
+    name: "Kenya Red Cross Society",
+    shortName: "Kenya Red Cross",
+    mission: "Emergency response, disaster relief, and community health programs nationwide.",
+    liveRoles: 26,
+    category: "Emergency",
+    color: "#ED1B2E",
+    image: "/images/org-kenya-red-cross.png",
+  },
+  {
+    id: "aga-khan",
+    name: "Aga Khan University Hospital",
+    shortName: "Aga Khan",
+    mission: "Premier healthcare institution providing world-class medical services and training.",
+    liveRoles: 26,
+    category: "Health",
+    color: "#8B1A1A",
+    image: "/images/org-aga-khan.jpg",
+  },
+  {
+    id: "rescue-co",
+    name: "Rescue.co",
+    shortName: "Rescue.co",
+    mission: "Emergency medical services and ambulance response across urban and rural Kenya.",
+    liveRoles: 26,
+    category: "Emergency",
+    color: "#FF4444",
+    image: "/images/org-rescue-co.jpg",
+  },
+  {
+    id: "refushe",
+    name: "RefuSHE Kenya",
+    shortName: "RefuSHE",
+    mission: "Empowers refugee girls and young women through education and safe shelter programs.",
+    liveRoles: 26,
+    category: "Refugee",
+    color: "#6B21A8",
+    image: "/images/org-refushe.jpg",
+  },
+  {
+    id: "kidscare",
+    name: "KidsCare Kenya",
+    shortName: "KidsCare",
+    mission: "Child welfare and residential care for orphaned and vulnerable children.",
+    liveRoles: 26,
+    category: "Child Welfare",
+    color: "#2563EB",
+    image: "/images/org-kidscare.jpg",
+  },
+];

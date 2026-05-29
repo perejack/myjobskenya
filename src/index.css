@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 40% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 8%;
+    --primary: 160 90% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 40% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 40 96% 50%;
+    --accent-foreground: 220 40% 8%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 90% 32%;
+    --radius: 0.75rem;
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --gradient-hero: linear-gradient(135deg, hsl(160 90% 32% / 0.9), hsl(220 40% 8% / 0.85));
+    --gradient-accent: linear-gradient(135deg, hsl(40 96% 50%), hsl(30 100% 55%));
+    --shadow-card: 0 4px 24px -4px hsl(220 40% 8% / 0.08);
+    --shadow-card-hover: 0 12px 40px -8px hsl(220 40% 8% / 0.15);
+    --shadow-accent: 0 4px 20px -4px hsl(40 96% 50% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(160 90% 32%), hsl(160 70% 45%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+}
